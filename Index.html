@@ -1,186 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Holiday Apartments</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="homepage.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/homepage.css" />
+  </head>
+  <body>
     <div class="main-nav-container">
-        <!-- Fixed Brand -->
-        <nav class="brand-nav navbar navbar-dark position-absolute">
-            <div class="container">
-                <a class="navbar-brand" href="#">Holiday Apartments</a>
-            </div>
-        </nav>
-    
-        <!-- Scrollable Navigation -->
-        <nav class="buttons-nav navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-2">
-                            <a class="nav-link rounded-pill" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link rounded-pill" href="#apartments">Explore Apartments</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link rounded-pill" href="#reviews">Reviews</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <!-- Fixed Brand -->
+      <nav class="brand-nav navbar navbar-dark position-absolute">
+        <div class="container">
+          <a href="#">
+            <img src="img/logo.png" class="logo" alt="Logo" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Scrollable Navigation -->
+      <nav class="buttons-nav navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a class="nav-link rounded-pill" href="#home">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link rounded-pill" href="#apartments"
+                  >Explore Apartments</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link rounded-pill" href="#reviews">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <!-- Header Section -->
     <header class="hero-section" id="home">
-        <h1 class="display-4">Holiday Apartments</h1>
-        <p class="lead">Find your perfect stay in Brașov!</p>
+      <h1 class="display-4">Holiday Apartments</h1>
+      <p class="lead">Find your perfect stay in Brașov!</p>
     </header>
 
+    <div
+      class="d-flex flex-column position-fixed top-50 start-0 translate-middle-y bg-brown rounded-end shadow social-icons-container"
+    >
+      <a
+        href="#"
+        class="text-center py-3 border-bottom text-white social-icons"
+      >
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a
+        href="#"
+        class="text-center py-3 border-bottom text-white social-icons"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="#" class="text-center py-3 text-white social-icons">
+        <i class="bi bi-telephone"></i>
+      </a>
+    </div>
+
     <!-- Apartments Section -->
-<section id="apartments" class="py-5">
-    <div class="container">
+    <section id="apartments" class="py-5">
+      <div class="container">
         <h2 class="text-center mb-4">Our Apartments</h2>
         <div class="row">
-            <!-- Apartment 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="apartment-img-container">
-                        <img src="img/rahul-chakraborty-dv9AoOYegRc-unsplash.jpg" class="card-img-top" alt="Apartment 1">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Apartment 1</h5>
-                        <p class="card-text">A beautiful apartment in the heart of the city.</p>
-                    </div>
-                </div>
+          <!-- Apartment 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="apartment-img-container">
+                <img
+                  src="img/rahul-chakraborty-dv9AoOYegRc-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Apartment 1"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Apartment 1</h5>
+                <p class="card-text">
+                  A beautiful apartment in the heart of the city.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <!-- Apartment 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="apartment-img-container">
-                        <img src="img/minh-pham-7pCFUybP_P8-unsplash.jpg" class="card-img-top" alt="Apartment 2">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Apartment 2</h5>
-                        <p class="card-text">A cozy apartment with amazing views.</p>
-                    </div>
-                </div>
+          <!-- Apartment 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="apartment-img-container">
+                <img
+                  src="img/minh-pham-7pCFUybP_P8-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Apartment 2"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Apartment 2</h5>
+                <p class="card-text">A cozy apartment with amazing views.</p>
+              </div>
             </div>
+          </div>
 
-            <!-- Apartment 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="apartment-img-container">
-                        <img src="img/minh-pham-OtXADkUh3-I-unsplash.jpg" class="card-img-top" alt="Apartment 3">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Apartment 3</h5>
-                        <p class="card-text">Modern and spacious for your family.</p>
-                    </div>
-                </div>
+          <!-- Apartment 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="apartment-img-container">
+                <img
+                  src="img/minh-pham-OtXADkUh3-I-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Apartment 3"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Apartment 3</h5>
+                <p class="card-text">Modern and spacious for your family.</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Reviews Section -->
-<section id="reviews" class="bg-light py-5">
-    <div class="container">
+    <section id="reviews" class="bg-light py-5">
+      <div class="container">
         <h2 class="text-center mb-4">What Our Guests Say</h2>
         <div class="row g-4">
-            <!-- Review 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <img src="img/Blake.jpg" class="rounded-circle me-2" alt="Guest 1">
-                            <div>
-                                <h6 class="card-title mb-0">Blake Smith</h6>
-                                <small class="text-muted" style="font-size: 0.8rem;">Apartment 1</small>
-                            </div>
-                        </div>
-                        <div class="mb-2">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-half text-warning"></i>
-                        </div>
-                        <p class="card-text small mb-1">Amazing location and beautiful apartment! The view was breathtaking.</p>
-                        <small class="text-muted" style="font-size: 0.75rem;">December 2024</small>
-                    </div>
+          <!-- Review 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center mb-2">
+                  <img
+                    src="img/Blake.jpg"
+                    class="rounded-circle me-2"
+                    alt="Guest 1"
+                  />
+                  <div>
+                    <h6 class="card-title mb-0">Blake Smith</h6>
+                    <small class="text-muted" style="font-size: 0.8rem"
+                      >Apartment 1</small
+                    >
+                  </div>
                 </div>
+                <div class="mb-2">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                </div>
+                <p class="card-text small mb-1">
+                  Amazing location and beautiful apartment! The view was
+                  breathtaking.
+                </p>
+                <small class="text-muted" style="font-size: 0.75rem"
+                  >December 2024</small
+                >
+              </div>
             </div>
+          </div>
 
-            <!-- Review 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <img src="img/Maria.jpg" class="rounded-circle me-2" alt="Guest 2">
-                            <div>
-                                <h6 class="card-title mb-0">Maria Garcia</h6>
-                                <small class="text-muted" style="font-size: 0.8rem;">Apartment 2</small>
-                            </div>
-                        </div>
-                        <div class="mb-2">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star text-warning"></i>
-                        </div>
-                        <p class="card-text small mb-1">Cozy and comfortable apartment with all the amenities you need.</p>
-                        <small class="text-muted" style="font-size: 0.75rem;">November 2024</small>
-                    </div>
+          <!-- Review 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center mb-2">
+                  <img
+                    src="img/Maria.jpg"
+                    class="rounded-circle me-2"
+                    alt="Guest 2"
+                  />
+                  <div>
+                    <h6 class="card-title mb-0">Maria Garcia</h6>
+                    <small class="text-muted" style="font-size: 0.8rem"
+                      >Apartment 2</small
+                    >
+                  </div>
                 </div>
+                <div class="mb-2">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                </div>
+                <p class="card-text small mb-1">
+                  Cozy and comfortable apartment with all the amenities you
+                  need.
+                </p>
+                <small class="text-muted" style="font-size: 0.75rem"
+                  >November 2024</small
+                >
+              </div>
             </div>
+          </div>
 
-            <!-- Review 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="d-flex align-items-center mb-2">
-                            <img src="img/David.jpg" class="rounded-circle me-2" alt="Guest 3">
-                            <div>
-                                <h6 class="card-title mb-0">David Brown</h6>
-                                <small class="text-muted" style="font-size: 0.8rem;">Apartment 3</small>
-                            </div>
-                        </div>
-                        <div class="mb-2">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                        </div>
-                        <p class="card-text small mb-1">Perfect stay! The apartment was spotless and modern.</p>
-                        <small class="text-muted" style="font-size: 0.75rem;">January 2025</small>
-                    </div>
+          <!-- Review 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center mb-2">
+                  <img
+                    src="img/David.jpg"
+                    class="rounded-circle me-2"
+                    alt="Guest 3"
+                  />
+                  <div>
+                    <h6 class="card-title mb-0">David Brown</h6>
+                    <small class="text-muted" style="font-size: 0.8rem"
+                      >Apartment 3</small
+                    >
+                  </div>
                 </div>
+                <div class="mb-2">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="card-text small mb-1">
+                  Perfect stay! The apartment was spotless and modern.
+                </p>
+                <small class="text-muted" style="font-size: 0.75rem"
+                  >January 2025</small
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<!-- Nu uita să adaugi link-ul pentru Bootstrap Icons în head -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Holiday Apartments. All rights reserved.</p>
+      <p>&copy; 2025 Holiday Apartments. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
