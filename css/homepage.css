@@ -132,8 +132,14 @@ html {
 
 .social-icons {
   transition: background-color 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
+.social-icons i {
+  font-size: 1.5rem;
+}
 .social-icons:hover {
   background-color: rgba(61, 33, 30, 1);
 }
