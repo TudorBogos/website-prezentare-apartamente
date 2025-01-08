@@ -119,13 +119,9 @@ html {
   z-index: 5;
   top: 50%;
   left: 0;
+  width: 60px;
   transform: translateY(-50%);
   background-color: rgb(83, 45, 41);
-}
-
-.bg-brown {
-  background-color: rgb(83, 45, 41);
-  width: 60px;
 }
 
 .rounded-end {
@@ -134,9 +130,12 @@ html {
 
 /* Am adaugat efect culoare pentru social icons */
 
+.social-icons {
+  transition: background-color 0.3s ease-in-out;
+}
+
 .social-icons:hover {
   background-color: rgba(61, 33, 30, 1);
-  transition: background-color 0.2s ease-in-out;
 }
 
 .social-icons:first-child {
