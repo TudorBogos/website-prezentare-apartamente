@@ -2,10 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Explore Apartments - Holiday Apartments</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/homepage.css" />
   </head>
   <body>
@@ -13,25 +22,36 @@
       <!-- Fixed Brand -->
       <nav class="brand-nav navbar navbar-dark position-absolute">
         <div class="container">
-          <a href="index.html">
-            <img src="img/logo.png" class="logo" alt="Logo" />
-          </a>
+          <img src="img/logo.svg" class="logo" alt="Logo" />
         </div>
       </nav>
 
       <!-- Scrollable Navigation -->
       <nav class="buttons-nav navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item px-2">
                 <a class="nav-link rounded-pill" href="index.html">Home</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link rounded-pill active" href="apartments.html">Explore Apartments</a>
+                <a class="nav-link rounded-pill" href="apartments.html"
+                  >Explore Apartments</a
+                >
               </li>
               <li class="nav-item px-2">
                 <a class="nav-link rounded-pill" href="contact.html">Contact</a>
@@ -42,49 +62,31 @@
       </nav>
     </div>
 
+    <!-- Social Icons -->
+    <div
+      class="d-flex flex-column position-fixed top-50 start-0 translate-middle-y bg-brown rounded-end shadow social-icons-container"
+    >
+      <a
+        href="#"
+        class="text-center py-3 border-bottom text-white social-icons"
+      >
+        <i class="bi bi-telephone"></i>
+      </a>
+      <a
+        href="#"
+        class="text-center py-3 border-bottom text-white social-icons"
+      >
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="#" class="text-center py-3 text-white social-icons">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </div>
+
     <!-- Apartments Section -->
-    <section class="py-5 mt-5">
+    <section class="py-5 mt-5" id="below-navbar">
       <div class="container">
         <h2 class="text-center mb-4">Our Apartments</h2>
-        
-        <!-- Filters -->
-        <div class="row mb-4">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row g-3">
-                  <div class="col-md-3">
-                    <select class="form-select">
-                      <option selected>Price Range</option>
-                      <option>$50-$100</option>
-                      <option>$100-$150</option>
-                      <option>$150+</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <select class="form-select">
-                      <option selected>Bedrooms</option>
-                      <option>1 Bedroom</option>
-                      <option>2 Bedrooms</option>
-                      <option>3+ Bedrooms</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <select class="form-select">
-                      <option selected>Amenities</option>
-                      <option>Wi-Fi</option>
-                      <option>Parking</option>
-                      <option>Pool</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <button class="btn btn-primary w-100">Apply Filters</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- Apartments Grid -->
         <div class="row g-4">
@@ -92,18 +94,27 @@
           <div class="col-md-4">
             <div class="card h-100">
               <div class="apartment-img-container">
-                <img src="img/rahul-chakraborty-dv9AoOYegRc-unsplash.jpg" class="card-img-top" alt="Apartment 1" />
-                <span class="badge bg-primary position-absolute top-0 end-0 m-3">$100/night</span>
+                <img
+                  src="img/rahul-chakraborty-dv9AoOYegRc-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Apartment 1"
+                />
+                <span class="badge position-absolute top-0 end-0 m-3"
+                  >$100/night</span
+                >
               </div>
               <div class="card-body">
                 <h5 class="card-title">Luxury City View Apartment</h5>
-                <p class="card-text">A beautiful apartment in the heart of the city with stunning views.</p>
+                <p class="card-text">
+                  A beautiful apartment in the heart of the city with stunning
+                  views.
+                </p>
                 <ul class="list-unstyled">
                   <li><i class="bi bi-people"></i> 4 Guests</li>
                   <li><i class="bi bi-door-closed"></i> 2 Bedrooms</li>
                   <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
                 </ul>
-                <a href="#" class="btn btn-primary rounded-pill w-100">View Details</a>
+                <a href="#" class="btn rounded-pill w-100">View Details</a>
               </div>
             </div>
           </div>
@@ -112,18 +123,27 @@
           <div class="col-md-4">
             <div class="card h-100">
               <div class="apartment-img-container">
-                <img src="img/minh-pham-7pCFUybP_P8-unsplash.jpg" class="card-img-top" alt="Apartment 2" />
-                <span class="badge bg-primary position-absolute top-0 end-0 m-3">$85/night</span>
+                <img
+                  src="img/minh-pham-7pCFUybP_P8-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Apartment 2"
+                />
+                <span class="badge position-absolute top-0 end-0 m-3"
+                  >$85/night</span
+                >
               </div>
               <div class="card-body">
                 <h5 class="card-title">Cozy Mountain View Suite</h5>
-                <p class="card-text">A cozy apartment with breathtaking mountain views and modern amenities.</p>
+                <p class="card-text">
+                  A cozy apartment with breathtaking mountain views and modern
+                  amenities.
+                </p>
                 <ul class="list-unstyled">
                   <li><i class="bi bi-people"></i> 2 Guests</li>
                   <li><i class="bi bi-door-closed"></i> 1 Bedroom</li>
                   <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
                 </ul>
-                <a href="#" class="btn btn-primary rounded-pill w-100">View Details</a>
+                <a href="#" class="btn rounded-pill w-100">View Details</a>
               </div>
             </div>
           </div>
@@ -132,25 +152,30 @@
           <div class="col-md-4">
             <div class="card h-100">
               <div class="apartment-img-container">
-                <img src="img/minh-pham-OtXADkUh3-I-unsplash.jpg" class="card-img-top" alt="Apartment 3" />
-                <span class="badge bg-primary position-absolute top-0 end-0 m-3">$150/night</span>
+                <img
+                  src="img/minh-pham-OtXADkUh3-I-unsplash.jpg"
+                  class="card-img-top"
+                  alt="Apartment 3"
+                />
+                <span class="badge position-absolute top-0 end-0 m-3"
+                  >$150/night</span
+                >
               </div>
               <div class="card-body">
                 <h5 class="card-title">Family Comfort Suite</h5>
-                <p class="card-text">Modern and spacious apartment perfect for families, with all amenities.</p>
+                <p class="card-text">
+                  Modern and spacious apartment perfect for families, with all
+                  amenities.
+                </p>
                 <ul class="list-unstyled">
                   <li><i class="bi bi-people"></i> 6 Guests</li>
                   <li><i class="bi bi-door-closed"></i> 3 Bedrooms</li>
                   <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
                 </ul>
-                <a href="#" class="btn btn-primary rounded-pill w-100">View Details</a>
+                <a href="#" class="btn rounded-pill w-100">View Details</a>
               </div>
             </div>
           </div>
-
-          <!-- More apartments... -->
-          <!-- Additional apartments would go here -->
-          
         </div>
       </div>
     </section>
