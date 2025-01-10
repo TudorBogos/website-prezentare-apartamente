@@ -4,9 +4,14 @@ html {
 
 /* * Css pentru logo */
 .logo {
-  max-width: 200px;
-  height: 200px;
+  background: transparent;
+  max-width: 125px;
+  height: 125px;
   display: block;
+}
+
+.logo-white{
+  background-color: rgba(110, 110, 110, 0.2);
 }
 
 /* Css pentru navbar */
@@ -31,7 +36,7 @@ html {
 
 .buttons-nav {
   position: absolute;
-  top: 80px;
+  top: 30px;
   left: 0;
   right: 0;
   z-index: 1001;
