@@ -1,90 +1,87 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* * Css pentru sectiunea de contact*/
 .cnt-container {
-    margin-top: 65px;
+  margin-top: 65px;
 }
 
 .row {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 /* * Css pentru logo */
 .logo {
-    background: transparent;
-    max-width: 125px;
-    height: 125px;
-    display: block;
+  background: transparent;
+  max-width: 125px;
+  height: 125px;
+  display: block;
 }
 
 /* *Css pentru navbar */
 .main-nav-container {
-    margin-top: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .navbar-brand {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .brand-nav {
-    background-color: aqua;
-    height: 0px;
-    top: 20px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  background-color: aqua;
+  height: 0px;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .buttons-nav {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1001;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-link {
-    background-color: rgba(83, 45, 41, 1);
-    /* Fundal semitransparent */
-    padding: 5px 15px;
-    /* Spațiere în jurul textului */
-    margin: 0 5px;
-    /* Spațiere între elementele navbar-ului */
-    color: #FFF;
-    /* Culoare text */
+  background-color: rgba(83, 45, 41, 1);
+  /* Fundal semitransparent */
+  padding: 5px 15px;
+  /* Spațiere în jurul textului */
+  margin: 0 5px;
+  /* Spațiere între elementele navbar-ului */
+  color: #fff;
+  /* Culoare text */
 }
 
 .nav-link:hover {
-    background-color: rgba(249,
-            222,
-            190,
-            1);
-    /* Fundal mai puțin transparent la hover */
-    color: #000;
-    /* Culoare text la hover */
+  background-color: rgba(249, 222, 190, 1);
+  /* Fundal mai puțin transparent la hover */
+  color: #000;
+  /* Culoare text la hover */
 }
 
 /* * Css pentru continutul de sub navbar */
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 /* * Css pentru butoane */
 .btn {
-    background-color: rgb(83, 45, 41);
-    color: white;
-    transition: background-color 0.3s ease-in-out;
+  background-color: rgb(83, 45, 41);
+  color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: rgb(103, 65, 61);
-    color: white;
+  background-color: rgb(103, 65, 61);
+  color: white;
 }
