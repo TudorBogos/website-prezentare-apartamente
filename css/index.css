@@ -10,7 +10,32 @@ html {
   display: block;
 }
 
-/* Css pentru navbar */
+/* *Css pentru navbar */
+
+.navbar-collapse {
+  position:inherit; /* Asigură-te că meniul este plasat corect */
+  left: 0;
+  right: 0;
+  z-index: 1050; /* Prioritate peste alte elemente */
+}
+
+.navbar-collapse.show {
+  display: flex; /* Asigură că meniul se afișează corect */
+  flex-direction: row; /* Afișează link-urile unul sub altul */
+}
+
+.navbar-toggler {
+  z-index: 1100; /* Butonul să rămână întotdeauna vizibil */
+}
+
+.nav-item {
+  text-align: center; /* Centrează link-urile */
+}
+
+.navbar-collapse .nav-link {
+  color: white; /* Asigură contrastul */
+  padding: 10px;
+}
 
 .main-nav-container {
   margin-top: 20px;
