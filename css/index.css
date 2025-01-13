@@ -123,12 +123,6 @@ html {
   transition: transform 0.25s ease;
 }
 
-/* * Css pentru sectiunea de apartamente din apartments */
-
-.badge {
-  background-color: rgb(83, 45, 41);
-}
-
 #apartments img:hover {
   transform: scale(1.05);
 }

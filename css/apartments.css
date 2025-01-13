@@ -68,11 +68,27 @@ html {
 
 /* * Css pentru sectiunea de apartamente din apartments */
 
+.apartment-img-container {
+  aspect-ratio: 1/3;
+  height: 600px;
+  overflow: hidden;
+}
+
+.apartment-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .badge {
   background-color: rgb(83, 45, 41);
 }
 
-#apartments img:hover {
+.apartment-img-container img {
+  transition: transform 0.25s ease;
+}
+
+.apartment-img-container img:hover {
   transform: scale(1.05);
 }
 
@@ -82,6 +98,67 @@ html {
 
 .row {
   margin-top: 15px;
+}
+
+/* * Animatii pentru sectiune de apartamente */
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(+30%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+#apartment-card-1 {
+  opacity: 0;
+  animation: fadeInLeft 2s ease-out forwards;
+}
+
+#apartment-card-2 {
+  opacity: 0;
+  animation: fadeIn 2.3s ease-out forwards;
+}
+
+#apartment-card-3 {
+  opacity: 0;
+  animation: fadeInRight 2s ease-out forwards;
 }
 
 /* * Css pentru butoane */
@@ -158,4 +235,13 @@ html {
 
 .contact-info-icon {
   color: rgb(83, 45, 41);
+}
+
+/* * Css pentru sectiune apartment details */
+
+.ap-details-text h5 {
+  margin-bottom: 20px;
+}
+.ap-details-text p {
+  font-size: 1.2rem;
 }

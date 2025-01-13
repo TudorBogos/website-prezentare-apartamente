@@ -88,7 +88,7 @@
         <!-- Apartments Grid -->
         <div class="row g-4">
           <!-- Apartment 1 -->
-          <div class="col-md-4">
+          <div class="col-md-4" id="apartment-card-1">
             <div class="card h-100">
               <div class="apartment-img-container">
                 <img
@@ -111,13 +111,17 @@
                   <li><i class="bi bi-door-closed"></i> 2 Bedrooms</li>
                   <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
                 </ul>
-                <a href="#" class="btn rounded-pill w-100">View Details</a>
+                <a
+                  class="btn rounded-pill w-100"
+                  data-section="apartment-details-1"
+                  >View Details</a
+                >
               </div>
             </div>
           </div>
 
           <!-- Apartment 2 -->
-          <div class="col-md-4">
+          <div class="col-md-4" id="apartment-card-2">
             <div class="card h-100">
               <div class="apartment-img-container">
                 <img
@@ -140,13 +144,17 @@
                   <li><i class="bi bi-door-closed"></i> 1 Bedroom</li>
                   <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
                 </ul>
-                <a href="#" class="btn rounded-pill w-100">View Details</a>
+                <a
+                  class="btn rounded-pill w-100"
+                  data-section="apartment-details-2"
+                  >View Details</a
+                >
               </div>
             </div>
           </div>
 
           <!-- Apartment 3 -->
-          <div class="col-md-4">
+          <div class="col-md-4" id="apartment-card-3">
             <div class="card h-100">
               <div class="apartment-img-container">
                 <img
@@ -169,10 +177,137 @@
                   <li><i class="bi bi-door-closed"></i> 3 Bedrooms</li>
                   <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
                 </ul>
-                <a href="#" class="btn rounded-pill w-100">View Details</a>
+                <a
+                  class="btn rounded-pill w-100"
+                  data-section="apartment-details-3"
+                  >View Details</a
+                >
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartment Details - Event View Button -->
+    <section>
+      <div
+        class="container border p-3 apartment-details"
+        id="apartment-details-1"
+        style="display: none"
+      >
+        <div class="row">
+          <div class="col-md-6 text-center mb-4 ap-details-text">
+            <h5>Luxury City View Apartment</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+              placeat debitis, id voluptatibus eos magni minus alias, velit
+              eveniet repellat iure cum! Facere id, dicta, laborum illum
+              sapiente nobis doloribus ipsa tenetur, voluptates modi at cumque?
+              Natus iste dicta molestias beatae blanditiis aliquid repellendus
+              optio adipisci nam? Nihil, eaque necessitatibus. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Corporis placeat
+              debitis, id voluptatibus eos magni minus alias, velit eveniet
+              repellat iure cum! Facere id, dicta, laborum illum sapiente nobis
+              doloribus ipsa tenetur, voluptates modi at cumque? Natus iste
+              dicta molestias beatae blanditiis aliquid repellendus optio
+              adipisci nam? Nihil, eaque necessitatibus.
+            </p>
+          </div>
+          <div class="col-md-6 text-center mt-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
+              width="400"
+              height="275"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-12 text-center">Aici sunt imagini</div>
+        </div>
+      </div>
+
+      <div
+        class="container border p-3 apartment-details"
+        id="apartment-details-2"
+        style="display: none"
+      >
+        <div class="row">
+          <div class="col-md-6 text-center mb-4 ap-details-text">
+            <h5>Cozy Mountain View Suite</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+              placeat debitis, id voluptatibus eos magni minus alias, velit
+              eveniet repellat iure cum! Facere id, dicta, laborum illum
+              sapiente nobis doloribus ipsa tenetur, voluptates modi at cumque?
+              Natus iste dicta molestias beatae blanditiis aliquid repellendus
+              optio adipisci nam? Nihil, eaque necessitatibus. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Corporis placeat
+              debitis, id voluptatibus eos magni minus alias, velit eveniet
+              repellat iure cum! Facere id, dicta, laborum illum sapiente nobis
+              doloribus ipsa tenetur, voluptates modi at cumque? Natus iste
+              dicta molestias beatae blanditiis aliquid repellendus optio
+              adipisci nam? Nihil, eaque necessitatibus.
+            </p>
+          </div>
+          <div class="col-md-6 text-center mt-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
+              width="400"
+              height="275"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-12 text-center">Aici sunt imagini</div>
+        </div>
+      </div>
+
+      <div
+        class="container border p-3 apartment-details"
+        id="apartment-details-3"
+        style="display: none"
+      >
+        <div class="row">
+          <div class="col-md-6 text-center mb-4 ap-details-text">
+            <h5>Family Comfort Suite</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+              placeat debitis, id voluptatibus eos magni minus alias, velit
+              eveniet repellat iure cum! Facere id, dicta, laborum illum
+              sapiente nobis doloribus ipsa tenetur, voluptates modi at cumque?
+              Natus iste dicta molestias beatae blanditiis aliquid repellendus
+              optio adipisci nam? Nihil, eaque necessitatibus. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Corporis placeat
+              debitis, id voluptatibus eos magni minus alias, velit eveniet
+              repellat iure cum! Facere id, dicta, laborum illum sapiente nobis
+              doloribus ipsa tenetur, voluptates modi at cumque? Natus iste
+              dicta molestias beatae blanditiis aliquid repellendus optio
+              adipisci nam? Nihil, eaque necessitatibus.
+            </p>
+          </div>
+          <div class="col-md-6 text-center mt-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
+              width="400"
+              height="275"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-12 text-center">Aici sunt imagini</div>
         </div>
       </div>
     </section>
