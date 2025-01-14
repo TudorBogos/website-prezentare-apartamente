@@ -16,6 +16,7 @@
       href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/apartments.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -191,11 +192,13 @@
 
     <!-- Apartment Details - Event View Button -->
     <section>
+      <!-- Container - display switch -->
       <div
         class="container border p-3 apartment-details"
         id="apartment-details-1"
         style="display: none"
       >
+        <!-- Row cu  -->
         <div class="row">
           <div class="col-md-6 text-center mb-4 ap-details-text">
             <h5>Luxury City View Apartment</h5>
@@ -214,20 +217,68 @@
               adipisci nam? Nihil, eaque necessitatibus.
             </p>
           </div>
-          <div class="col-md-6 text-center mt-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
-              width="400"
-              height="275"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div
+            class="col-md-6 d-flex flex-row justify-content-center align-items-center"
+          >
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
+                width="450"
+                height="282"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-md-12 text-center">Aici sunt imagini</div>
+          <div
+            class="col-md-12 text-center d-flex flex-wrap justify-content-center justify-content-md-between mx-auto images-container"
+          >
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 1"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="0"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 2"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="1"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 3"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="2"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 4"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="3"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 5"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="4"
+            />
+          </div>
         </div>
       </div>
 
@@ -254,20 +305,68 @@
               adipisci nam? Nihil, eaque necessitatibus.
             </p>
           </div>
-          <div class="col-md-6 text-center mt-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
-              width="400"
-              height="275"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div
+            class="col-md-6 d-flex flex-row justify-content-center align-items-center"
+          >
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
+                width="450"
+                height="282"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-md-12 text-center">Aici sunt imagini</div>
+          <div
+            class="col-md-12 text-center d-flex flex-wrap justify-content-center justify-content-md-between mx-auto images-container"
+          >
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 1"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="0"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 2"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="1"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 3"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="2"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 4"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="3"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 5"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="4"
+            />
+          </div>
         </div>
       </div>
 
@@ -294,23 +393,157 @@
               adipisci nam? Nihil, eaque necessitatibus.
             </p>
           </div>
-          <div class="col-md-6 text-center mt-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
-              width="400"
-              height="275"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div
+            class="col-md-6 d-flex flex-row justify-content-center align-items-center"
+          >
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d174.34191615319276!2d25.588929349650854!3d45.641369225987276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1736804043274!5m2!1sen!2sro"
+                width="450"
+                height="282"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-md-12 text-center">Aici sunt imagini</div>
+          <div
+            class="col-md-12 text-center d-flex flex-wrap justify-content-center justify-content-md-between mx-auto images-container"
+          >
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 1"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="0"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 2"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="1"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 3"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="2"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 4"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="3"
+            />
+            <img
+              src="img/placeholder.jpeg"
+              alt="Image 5"
+              class="img-thumbnail"
+              data-bs-toggle="modal"
+              data-bs-target="#imageCarouselModal"
+              data-bs-slide-to="4"
+            />
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal with Carousel -->
+    <div
+      class="modal fade"
+      id="imageCarouselModal"
+      tabindex="-1"
+      aria-labelledby="carouselModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div
+              id="imageCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- Carousel Inner -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/placeholder.jpeg"
+                    class="d-none d-md-block"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/placeholder.jpeg"
+                    class="d-none d-md-block"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/placeholder.jpeg"
+                    class="d-none d-md-block"
+                    alt="Image 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/placeholder.jpeg"
+                    class="d-none d-md-block"
+                    alt="Image 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/placeholder.jpeg"
+                    class="d-none d-md-block"
+                    alt="Image 5"
+                  />
+                </div>
+              </div>
+
+              <!-- Carousel Controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#imageCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#imageCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3 mt-5">
