@@ -13,15 +13,15 @@ html {
 /* *Css pentru navbar */
 
 .navbar-collapse {
-  position:inherit; /* Asigură-te că meniul este plasat corect */
+  position: inherit; /* Asigură-te că meniul este plasat corect */
   left: 0;
   right: 0;
   z-index: 1050; /* Prioritate peste alte elemente */
 }
 
 .navbar-collapse.show {
-  display: flex; /* Asigură că meniul se afișează corect */
-  flex-direction: row; /* Afișează link-urile unul sub altul */
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar-toggler {
@@ -214,6 +214,12 @@ html {
 }
 
 /* * CSS pentru cutia din stanga paginii cu linkuri catre social media */
+
+@media (max-width: 670px) {
+  .social-icons-container {
+    display: none !important;
+  }
+}
 
 .social-icons-container {
   position: fixed;
