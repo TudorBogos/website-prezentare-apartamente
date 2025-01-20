@@ -62,7 +62,63 @@ async function seedData() {
             apartment: 'Apartment 2',
             comment: 'Excelent! Recomand cu toată încrederea.',
             date: 'September 2024'
-        }
+        },
+        {
+            name: "Elena Ionescu",
+            image: "img/Elena.jpg",
+            rating: 4.5,
+            apartment: "Apartment 2",
+            comment: "Ne-am simțit foarte bine, gazda foarte primitoare, totul a fost curat.",
+            date: "February 2025"
+          },
+          {
+            name: "Fabian Johnson",
+            image: "img/Fabian.jpg",
+            rating: 4,
+            "apartment": "Apartment 3",
+            comment: "Amplasare excelentă, foarte aproape de centru. Recomand!",
+            "date": "March 2024"
+          },
+          {
+            name: "Ioana Marin",
+            image: "img/Ioana.jpg",
+            rating: 3.5,
+            "apartment": "Apartment 1",
+            comment: "Sejur plăcut, însă se poate îmbunătăți curățenia.",
+            "date": "May 2024"
+          },
+          {
+            name: "Sophie Chang",
+            image: "img/Sophie.jpg",
+            rating: 5,
+            "apartment": "Apartment 2",
+            comment: "Totul perfect! Voi reveni cu siguranță.",
+            "date": "August 2024"
+          },
+          {
+            name: "Andreea Marin",
+            image: "img/Andreea.jpg",
+            rating: 2.5,
+            "apartment": "Apartment 3",
+            comment: "A fost cam gălăgie seara, altfel ar fi fost ok.",
+            "date": "September 2024"
+          },
+          {
+            name: "Cristina Popa",
+            image: "img/Cristina.jpg",
+            rating: 4.5,
+            "apartment": "Apartment 1",
+            comment: "Excelent, design modern și o priveliște deosebită.",
+            "date": "January 2025"
+          },
+          {
+            name: "Robert Lee",
+            image: "img/Robert.jpg",
+            rating: 5,
+            "apartment": "Apartment 3",
+            comment: "Recomand! Totul la superlativ.",
+            "date": "February 2025"
+          }
     ]);
 
     console.log('Date inserate cu succes!');
