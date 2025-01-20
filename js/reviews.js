@@ -69,9 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const ratingDiv = document.createElement('div');
       ratingDiv.classList.add('mb-2');
       // Creează stele corespunzătoare rating-ului
-      // Poți face ceva simplu: rotunjim rating-ul și punem x stele pline
       const starCount = Math.floor(review.rating || 0); // rotunjire în jos
-      const halfStar = (review.rating % 1 !== 0); // dacă e 4.5 punem o stea "half"
+      const halfStar = (review.rating % 1 !== 0);
+      const starRest = Math.floor(5 - review.rating);
       for (let i = 0; i < starCount; i++) {
         const starIcon = document.createElement('i');
         starIcon.classList.add('bi', 'bi-star-fill', 'text-warning');
@@ -82,9 +82,12 @@ document.addEventListener('DOMContentLoaded', () => {
         halfIcon.classList.add('bi', 'bi-star-half', 'text-warning');
         ratingDiv.appendChild(halfIcon);
       }
-      // Dacă vrei să pui 5 stele "goale" până la capăt, le poți adăuga în plus
-      // (în funcție de design).
-  
+      for (let i = 0; i < starRest; i++) {
+        const starEmpty = document.createElement('i');
+        starEmpty.classList.add('bi', 'bi-star', 'text-warning');
+        ratingDiv.appendChild(starEmpty);
+      }
+      
       // Paragraful cu comentariu
       const commentP = document.createElement('p');
       commentP.classList.add('card-text', 'small', 'mb-1');

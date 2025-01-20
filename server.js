@@ -66,7 +66,7 @@ const Review = mongoose.model('Review', reviewSchema);
 app.get('/api/reviews', async(req, res) => {
     try {
         const topReviews = await Review.aggregate([
-            { $match: { rating: { $gte: 4 } } }, // Filtrează review-urile cu rating >= 4
+            { $match: { rating: { $gte: 3 } } }, // Filtrează review-urile cu rating >= 3
             { $sample: { size: 3 } } // Alege aleator 3 dintre ele
         ]);
         res.json(topReviews);
