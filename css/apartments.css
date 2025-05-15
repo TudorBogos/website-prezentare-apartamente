@@ -80,6 +80,7 @@ html {
   /* Spațiere între elementele navbar-ului */
   color: #fff;
   /* Culoare text */
+  transition: 0.5s ease;
 }
 
 .nav-link:hover {
