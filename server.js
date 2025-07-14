@@ -1,3 +1,4 @@
+// server.js
 const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require("fs");
@@ -6,76 +7,107 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
+const MONGO_URI =
+  process.env.MONGO_URI || "mongodb://127.0.0.1:27017/reviewsdb";
+
 app.use(cors());
 
-// Conectare la MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/reviewsdb", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// Connect to MongoDB
+mongoose
+  .connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log(`✅ Connected to MongoDB at ${MONGO_URI}`))
+  .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 app.use(express.static(path.join(__dirname)));
 
-// Middleware pentru a parsa datele din cererile POST
+// Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
-// Endpoint pentru salvarea datelor din formular
+// Endpoint to save form data
 app.post("/submit-form", (req, res) => {
   const formData = req.body;
-
-  // Calea către fișierul JSON
+  // Path to JSON file
   const filePath = path.join(__dirname, "form_submissions.json");
 
-  // Citește fișierul existent sau creează unul nou dacă nu există
+  // Read existing file or start with empty array
   fs.readFile(filePath, "utf8", (err, data) => {
     let submissions = [];
     if (!err && data) {
-      submissions = JSON.parse(data); // Parsează conținutul existent
+      submissions = JSON.parse(data);
     }
 
-    // Adaugă noua submisiune
+    // Add new submission
     submissions.push(formData);
 
-    // Scrie submisiunile actualizate în fișier
+    // Write updated submissions back to file
     fs.writeFile(filePath, JSON.stringify(submissions, null, 2), (err) => {
       if (err) {
-        console.error("Eroare scriere fisier:", err);
-        return res.status(500).send("Eroare la salvarea submisiunii.");
+        console.error("Error writing file:", err);
+        return res.status(500).send("Error saving submission.");
       }
-      res.send("Submisiunea a fost salvată cu succes!");
+      res.send("Submission saved successfully!");
     });
   });
 });
 
-// Definim o schema pentru  review-uri
+// Define schema for reviews
 const reviewSchema = new mongoose.Schema({
   name: String,
-  image: String, // link către poza utilizatorului (ex: 'img/Blake.jpg')
+  image: String, // link to user image (ex: 'img/Blake.jpg')
   rating: Number, // ex: 5, 4.5 etc.
   apartment: String, // ex: "Apartment 1"
-  comment: String, // ex: "Foarte frumos, m-am simtit bine."
+  comment: String, // ex: "Very nice stay, felt great."
   date: String, // ex: "December 2024"
 });
 
-// Cream modelul pe baza schema
+// Create model based on schema
 const Review = mongoose.model("Review", reviewSchema);
 
-// Endpoint care returnează 3 review-uri random dintre cele care au rating >= 4
+// Endpoint returning 3 random reviews with rating >= 3
 app.get("/api/reviews", async (req, res) => {
   try {
     const topReviews = await Review.aggregate([
-      { $match: { rating: { $gte: 3 } } }, // Filtrează review-urile cu rating >= 3
-      { $sample: { size: 3 } }, // Alege aleator 3 dintre ele
+      { $match: { rating: { $gte: 3 } } },
+      { $sample: { size: 3 } },
     ]);
     res.json(topReviews);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Eroare la preluarea review-urilor" });
+    res.status(500).json({ error: "Error fetching reviews" });
   }
 });
 
-// Pornește serverul
-app.listen(PORT, () => {
-  console.log(`Serverul rulează pe http://localhost:${PORT}`);
+// Debug route to fetch all reviews
+app.get("/api/debug-all-reviews", async (req, res) => {
+  try {
+    const all = await Review.find({});
+    res.json(all);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Error fetching all reviews" });
+  }
+});
+
+// Start server and keep reference for shutdown
+const server = app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
+});
+
+// Graceful shutdown on Ctrl-C
+process.on("SIGINT", async () => {
+  console.log("\nSIGINT received: closing MongoDB connection...");
+  try {
+    await mongoose.connection.close();
+    console.log("MongoDB disconnected due to app termination (SIGINT)");
+  } catch (err) {
+    console.error("Error during MongoDB disconnection:", err);
+  }
+  server.close(() => {
+    console.log("Express server closed");
+    process.exit(0);
+  });
 });
