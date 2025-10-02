@@ -1,22 +1,21 @@
 services:
-  mongo:
-    image: mongo:6.0
-    restart: unless-stopped
-    volumes:
-      - mongo-data:/data/db
-    ports:
-      - "27017:27017"
+  # mongo:
+  #   image: mongo:6.0
+  #   restart: unless-stopped
+  #   volumes:
+  #     - mongo-data:/data/db
+  #   ports:
+  #     - "27017:27017"
 
   app:
     build: .
-    depends_on:
-      - mongo
-    environment:
-      - MONGO_URI=mongodb://mongo:27017/reviewsdb
+    # depends_on:
+    #   - mongo
+    # environment:
+    #   - MONGO_URI=mongodb://mongo:27017/reviewsdb
     ports:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
-
-volumes:
-  mongo-data:
+# volumes:
+#   mongo-data:
