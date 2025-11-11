@@ -1,12 +1,12 @@
-FROM node:18-alpine
+FROM node:25-alpine
 WORKDIR /usr/src/app
 
-# Install deps
+# Install dependencies (includes dev deps in this non-prod image)
 COPY package*.json ./
 RUN npm install
 
-# Copy app
+# Copy the app
 COPY . .
 
 EXPOSE 3000
-CMD ["node", "server.js"]
+CMD ["npm", "run", "start"]
